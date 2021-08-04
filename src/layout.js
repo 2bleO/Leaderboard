@@ -5,9 +5,9 @@ export const layout = () => `
       <button>Refresh</button>
     </div>
     <ul class="score-list">
-      <li>Name: 100</li>
+      <li>Name: 10</li>
       <li>Name: 20</li>
-      <li>Name: 50</li>
+      <li>Name: 30</li>
     </ul>
   </div>
   <div class="add-scores">
