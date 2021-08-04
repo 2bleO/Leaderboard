@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  padding: 20px;
+}
+
+.header h1 {
+  font-size: 70px;
+}
+
+.scores-header {
+  display: flex;
+  align-items: center;
+}
+
+.scores-header button {
+  margin: 10px;
+  padding: 15px;
+}
+
+.scores-header h2 {
+  font-size: 40px;
+}
+
+.scores-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 5%;
+}
+
+li {
+  list-style: none;
+}
+
+input {
+  width: 100%;
+  margin-right: 50px;
+}
