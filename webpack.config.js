@@ -8,13 +8,17 @@ module.exports = {
   mode: 'development',
   entry: './src/app.js',
   devtool: 'inline-source-map',
+  watchOptions: {
+    poll: true,
+    ignored: /node_modules/,
+  },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'development',
+      template: './src/index.html',
     }),
   ],
   output: {
-    filename: 'bundle.js',
+    filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
