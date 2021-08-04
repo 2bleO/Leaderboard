@@ -31,3 +31,12 @@
   grid-template-columns: 1fr 1fr;
   margin: 5%;
 }
+
+li {
+  list-style: none;
+}
+
+input {
+  width: 100%;
+  margin-right: 50px;
+}
