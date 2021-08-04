@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leaderboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+</head>
+<body>
+  <div class="header">
+    <h1>Leaderboard</h1>
+  </div>
+  <div class="scores">
+    <div class="scores-header">
+      <h2>Recent scores</h2>
+      <button>Refresh</button>
+    </div>
+    <ul>
+
+    </ul>
+  </div>
+  <div class="add-scores">
+    <div class="scores-header">
+      <h2>Add your score</h2>
+    </div>
+    <form action="">
+      <input type="text" id="name" name="name" placeholder="Your name">
+      <input type="number" id="score" name="score" placeholder="Your score" step="1" min="0" max="100">
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </div>
+  
+
+  <script src="app.js"></script>
+</body>
+</html>
