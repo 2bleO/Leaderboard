@@ -16,6 +16,8 @@ window.addEventListener('DOMContentLoaded', async () => {
     const name = document.getElementById('formName');
     const score = document.getElementById('formScore');
     await addScore(name, score, gameId);
+    name.value = '';
+    score.value = '';
   });
 
   refreshButton.addEventListener('click', async () => {
