@@ -31,10 +31,6 @@ Get your copy of this project by cloning the repository:
 
 - npm start || npm run build
 
-### Run tests
-
-- npm test
-
 ## Built With
 
 - HTML
