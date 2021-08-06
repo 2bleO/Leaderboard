@@ -1,6 +1,6 @@
 const apiBase = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/';
 
-export async function createGame(gameName) {
+export const createGame = async (gameName) => {
   const game = { name: `${gameName}` };
   const response = await fetch(`${apiBase}games/`, {
     method: 'POST',
@@ -11,9 +11,9 @@ export async function createGame(gameName) {
   });
   const { result } = await response.json();
   return result.split(' ')[3];
-}
+};
 
-export async function addScore(user, score, id) {
+export const addScore = async (user, score, id) => {
   const player = { user: user.value, score: score.value };
   const response = await fetch(`${apiBase}games/${id}/scores/`, {
     method: 'POST',
@@ -24,7 +24,7 @@ export async function addScore(user, score, id) {
   });
   const result = await response.json();
   return result;
-}
+};
 
 export const getScores = async (gameId) => {
   const response = await fetch(`${apiBase}games/${gameId}/scores/`);
